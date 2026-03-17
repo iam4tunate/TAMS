@@ -76,7 +76,7 @@ export default function Features() {
               } items-center gap-16 lg:gap-32`}
             >
               <div className="flex-1 text-center lg:text-left">
-                <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-secondary leading-tight tracking-tight">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-secondary leading-tight tracking-tight">
                   {feature.title}
                 </h2>
                 <p className="text-text-muted leading-relaxed mb-6 mt-4 max-w-xl">
