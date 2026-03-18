@@ -38,9 +38,9 @@ export default function HowItWorksSection() {
     <section id="how-it-works" className="py-20 bg-white">
       <div className="container">
         <div className="text-center mb-14">
-          <span className="pill-beta mb-4 uppercase tracking-widest">
+          {/* <span className="pill-beta mb-4 uppercase tracking-widest">
             How It Works
-          </span>
+          </span> */}
           <h2 className="text-3xl lg:text-4xl font-bold text-secondary tracking-tight mb-4">
             From Sign-Up to Signed Agreement
           </h2>
