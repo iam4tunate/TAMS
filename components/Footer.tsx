@@ -48,31 +48,75 @@ export default function Footer() {
 
             <div className="flex gap-16 md:gap-24 pl-2">
               <div className="flex flex-col gap-5">
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors font-medium">About</Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors font-medium">Blog</Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors font-medium">FAQ</Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors font-medium">Support</Link>
+                <Link
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors font-medium"
+                >
+                  About
+                </Link>
+                <Link
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors font-medium"
+                >
+                  Blog
+                </Link>
+                <Link
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors font-medium"
+                >
+                  FAQ
+                </Link>
+                <Link
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors font-medium"
+                >
+                  Support
+                </Link>
               </div>
             </div>
           </div>
 
           <div className="flex flex-col gap-8 md:justify-start lg:pl-12">
             <div>
-              <h4 className="font-semibold text-lg mb-4">Follow us on social media</h4>
+              <h4 className="font-semibold text-lg mb-4">
+                Follow us on social media
+              </h4>
               <div className="flex flex-wrap gap-4 md:gap-6 text-sm">
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors font-medium">Instagram</Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors font-medium">Twitter</Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors font-medium">LinkedIn</Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors font-medium">Facebook</Link>
+                <Link
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors font-medium"
+                >
+                  Instagram
+                </Link>
+                <Link
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors font-medium"
+                >
+                  Twitter
+                </Link>
+                <Link
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors font-medium"
+                >
+                  LinkedIn
+                </Link>
+                <Link
+                  href="#"
+                  className="text-gray-400 hover:text-white transition-colors font-medium"
+                >
+                  Facebook
+                </Link>
               </div>
             </div>
 
             <div className="mt-4">
-              <h4 className="font-semibold text-lg mb-4">Subscribe to our newsletter to get updates</h4>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <input 
-                  type="email" 
-                  placeholder="Email address" 
+              <h4 className="font-semibold text-lg mb-4">
+                Subscribe to our newsletter to get updates
+              </h4>
+              <div className="flex flex-col lg:flex-row gap-3">
+                <input
+                  type="email"
+                  placeholder="Email address"
                   className="flex-1 bg-white border-0 rounded-lg px-5 py-3.5 text-secondary placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary transition-all font-medium"
                 />
                 <button className="bg-primary hover:bg-[#007a5b] text-white font-bold px-8 py-3.5 rounded-lg transition-all">
@@ -83,8 +127,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 flex flex-col items-center justify-center">
-        </div>
+        <div className="pt-8 flex flex-col items-center justify-center"></div>
       </div>
     </footer>
   );

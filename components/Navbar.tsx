@@ -7,8 +7,8 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "#" },
-    { name: "Features", href: "#" },
+    { name: "Home", href: "/" },
+    { name: "Features", href: "/features" },
     { name: "Pricing", href: "#" },
     { name: "Testimonials", href: "#" },
     { name: "Contact Us", href: "#" },
@@ -65,7 +65,11 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-sm font-semibold text-gray-700 hover:text-primary transition-colors"
+              className={`text-sm font-semibold text-gray-700 transition-colors ${
+                link.name === "Home" || link.name === "Features"
+                  ? "hover:text-primary"
+                  : "opacity-50 hover:opacity-100"
+              }`}
             >
               {link.name}
             </Link>
@@ -124,14 +128,21 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-base font-semibold text-gray-700 py-2 hover:text-primary transition-colors"
+                className={`text-base font-semibold text-gray-700 py-2 transition-colors ${
+                  link.name === "Home" || link.name === "Features"
+                    ? "hover:text-primary"
+                    : "opacity-50 hover:opacity-100"
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.name}
               </Link>
             ))}
             <hr className="my-2 border-gray-100" />
-            <Link href="#" className="text-base font-bold text-primary py-2 text-center border border-primary/20 rounded-full">
+            <Link
+              href="#"
+              className="text-base font-bold text-primary py-2 text-center border border-primary/20 rounded-full"
+            >
               Login
             </Link>
           </div>
